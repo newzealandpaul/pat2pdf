@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
 # pat2pdf version 1.32
+# Copyright (c)2012 Paul William <https://github.com/newzealandpaul>
 # Copyright (c)2000 Oren Tirosh <oren@hishome.net>
 # Copyright (c)2002 Thomas Boege <thomas@boegenielsen.dk>
 # Released under the GPL 
@@ -24,6 +25,9 @@
 # Error checking and recovery could be better.
 #
 #Homepage:
+# https://github.com/newzealandpaul/pat2pdf
+#
+#Old Homepage (Now Offline):
 # http://www.tothink.com/pat2pdf
 #
 
@@ -110,9 +114,9 @@ PATENTPAGE=$( url2stdout "$PATENTURL" |head -n 70 ) ||  die "Error fetching pate
 TITLE=$( extract "$PATENTPAGE" "font size=\"+1\">" "" "</font>" ) || TITLE="##Error isolating patent title - continuing anyway##"
 echo "U.S. Patent Application $PATNUM: $TITLE"
 echo $PATENTURL
-IMAGEURL=$( extract "$PATENTPAGE" "a href=" "http://aiw" ">" ) ||  die "Error isolating image page URL from patent page."
+IMAGEURL=$( extract "$PATENTPAGE" "a href=" "http://pimg-aiw" ">" ) ||  die "Error isolating image page URL from patent page."
 
-IMAGESERVER=$( extract "$IMAGEURL" "" "http://aiw" "/.aiw?" ) || die "Error isolating image server name."
+IMAGESERVER=$( extract "$IMAGEURL" "" "http://pimg-aiw" "/.aiw?" ) || die "Error isolating image server name."
 }
 
 
