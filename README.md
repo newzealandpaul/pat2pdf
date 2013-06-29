@@ -20,7 +20,7 @@ This scirpt should work on any Unix-like system (Linux, Mac OS X etc.) with the 
 Usage
 ====
 
-> pat2pdf <number>|<application number>
+> pat2pdf &lt;Patent Number or Application Number&gt;
 
 Examples
 ===
