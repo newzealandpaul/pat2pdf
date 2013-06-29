@@ -12,6 +12,11 @@ History
 
 This script was originally written by Oren Tirosh and Thomas Boege. In 2013 the script broke due to changes to the USTPO website. Paul William fixed the script and uploaded it to GitHub because its [original homepage](http://www.tothink.com/pat2pdf) was no longer online.
 
+Compatibility
+=====
+
+This scirpt should work on any Unix-like system (Linux, Mac OS X etc.) with the required command line tools and libraries installed.
+
 Usage
 ====
 
