@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 #
-# pat2pdf version 1.32
-# Copyright (c)2012 Paul William <https://github.com/newzealandpaul>
+# pat2pdf version 2.00
 # Copyright (c)2000 Oren Tirosh <oren@hishome.net>
 # Copyright (c)2002 Thomas Boege <thomas@boegenielsen.dk>
-# Released under the GPL 
+# Copyright (c)2013 Paul William <https://github.com/newzealandpaul>
+#
+# Released under the GPL.
 #
 # This script connects to the USPTO patent database, retrieves the TIFF
 # patent images and converts them into a single pdf file using libtiff.
 #
-# Yes, I know, you would have written it in perl/python/(insert your 
+# Yes, I know, you would have written it in perl/python/(insert your
 # favourite scripting language here)
 #
-# It requires an http fetcher (lynx by default), tiffcp and tiff2pdf 
+# It requires an http fetcher (lynx by default), tiffcp and tiff2pdf
 # (both part of libtiff)
 #
 #Usage:
@@ -30,11 +31,11 @@
 #Old Homepage (Now Offline):
 # http://www.tothink.com/pat2pdf
 #
-
-
+#
 # Some utility functions:
-
+#
 # Nonzero if first string contains second string (+globbing chars ?*[x-y])
+
 contains() 
   { [ -n "$1" -a -z "${1##*$2*}" ] 
 }
