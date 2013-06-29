@@ -20,18 +20,18 @@ This scirpt should work on any Unix-like system (Linux, Mac OS X etc.) with the 
 Usage
 ====
 
-pat2pdf <number>|<application number>
+> pat2pdf <number>|<application number>
 
-Example
+Examples
 ===
 
 Fetching a USTPO patent application:
 
-pat2pdf 20130049740
+> pat2pdf 20130049740
 
 Fetching a USTPO patent:
 
-pat2pdf 8259522
+> pat2pdf 8259522
 
 Result is a file in the current directory named pat<patnum>.pdf
 
