@@ -3,7 +3,7 @@ pat2pdf
 
 This script connects to the [USPTO](http://patft.uspto.gov/) patent database, retrieves the TIFF images of patents or patent applications and converts them into a single PDF file using libtiff.
 
-Yes, I know, you would have written it in perl/python/(insert your favourite scripting language here), but it is written in shell and works well.
+Yes, I know, you would have written it in perl/python/(insert your favourite scripting language here), but it is written in bash and works well.
 
 It requires an http fetcher (lynx by default), tiffcp and tiff2pdf (both part of libtiff).
 
