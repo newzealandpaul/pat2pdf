@@ -114,7 +114,7 @@ PATENTPAGE=$( url2stdout "$PATENTURL" |head -n 70 ) ||  die "Error fetching pate
 
 TITLE=$( extract "$PATENTPAGE" "font size=\"+1\">" "" "</font>" ) || TITLE="##Error isolating patent title - continuing anyway##"
 echo "U.S. Patent Application $PATNUM: $TITLE"
-echo $PATENTURL
+
 IMAGEURL=$( extract "$PATENTPAGE" "a href=" "http://pimg-aiw" ">" ) ||  die "Error isolating image page URL from patent page."
 
 IMAGESERVER=$( extract "$IMAGEURL" "" "http://pimg-aiw" "/.aiw?" ) || die "Error isolating image server name."
